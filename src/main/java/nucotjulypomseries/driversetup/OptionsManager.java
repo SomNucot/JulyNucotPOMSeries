@@ -41,6 +41,7 @@ public class OptionsManager {
 	public FirefoxOptions getFirefoxOptions() {
 		System.out.println("firefox options");
 		fo = new FirefoxOptions();
+		fo.addArguments("--remote-allow-origins=*");
 		if (Boolean.parseBoolean(opro.getProperty("headless").trim()))
 			fo.addArguments("--headless");
 		if (Boolean.parseBoolean(opro.getProperty("incognito").trim()))
