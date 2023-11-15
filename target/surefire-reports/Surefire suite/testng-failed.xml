@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="nucotjulypomseries.tests.HomePageTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="homePageUrlTest"/>
+          <include name="setup"/>
+          <include name="homePageSetUp"/>
+          <include name="systemUserDetailsTest"/>
+          <include name="homePageTitleTest"/>
+        </methods>
+      </class> <!-- nucotjulypomseries.tests.HomePageTest -->
+      <class name="nucotjulypomseries.tests.LoginPageTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="loginPageUrlTest"/>
+          <include name="setup"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- nucotjulypomseries.tests.LoginPageTest -->
+      <class name="nucotjulypomseries.tests.LoginWithDifferentDataTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="setup"/>
+          <include name="doSetupLoginData"/>
+        </methods>
+      </class> <!-- nucotjulypomseries.tests.LoginWithDifferentDataTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 5, Errors: 0, Skipped: 4, Time elapsed: 16.487 s <<< FAILURE! - in TestSuite
+homePageSetUp(nucotjulypomseries.tests.HomePageTest)  Time elapsed: 15.218 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.opro" is null
+	at nucotjulypomseries.tests.HomePageTest.homePageSetUp(HomePageTest.java:16)
+
+doSetupLoginData(nucotjulypomseries.tests.LoginWithDifferentDataTest)  Time elapsed: 0.767 s  <<< FAILURE!
+java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()" because "sheet" is null
+	at nucotjulypomseries.tests.LoginWithDifferentDataTest.getRegTestData(LoginWithDifferentDataTest.java:16)
+
+loginPageUrlTest(nucotjulypomseries.tests.LoginPageTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "nucotjulypomseries.pages.LoginPage.getLoginPageURL()" because "this.loginPage" is null
+	at nucotjulypomseries.tests.LoginPageTest.loginPageUrlTest(LoginPageTest.java:13)
+
+loginPageTitleTest(nucotjulypomseries.tests.LoginPageTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "nucotjulypomseries.pages.LoginPage.getLoginPageTitle()" because "this.loginPage" is null
+	at nucotjulypomseries.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:21)
+
+loginTest(nucotjulypomseries.tests.LoginPageTest)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.opro" is null
+	at nucotjulypomseries.tests.LoginPageTest.loginTest(LoginPageTest.java:28)
+
